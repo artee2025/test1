@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { GameProvider } from './hooks/useGameState';
 import BottomNav from './components/BottomNav';
@@ -48,10 +48,10 @@ function AnimatedRoutes() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <GameProvider>
         <AnimatedRoutes />
       </GameProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
