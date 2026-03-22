@@ -38,7 +38,7 @@ export default function Protocol() {
   const { protocol } = state;
 
   const getPhaseStatus = (id: string) => {
-    if (id === 'morning') return protocol.morning.completed ? 'completed' : protocol.morning.currentStep > 0 ? 'in-progress' : 'locked';
+    if (id === 'morning') return protocol.morning.completed ? 'completed' : protocol.morning.currentStep > 0 ? 'in-progress' : 'unlocked';
     if (id === 'daytime') return protocol.daytime.completed ? 'completed' : protocol.morning.completed ? 'unlocked' : 'locked';
     if (id === 'evening') return protocol.evening.completed ? 'completed' : protocol.morning.completed ? 'unlocked' : 'locked';
     return 'locked';
