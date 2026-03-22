@@ -113,7 +113,7 @@ export default function Morning() {
             transition={{ delay: 0.2 }}
             className="text-2xl font-bold mb-3"
           >
-            Excavation Complete
+            Раскопки Завершены
           </motion.h2>
           <motion.p
             initial={{ opacity: 0 }}
@@ -121,8 +121,7 @@ export default function Morning() {
             transition={{ delay: 0.4 }}
             className="text-text-secondary text-sm leading-relaxed mb-4 max-w-xs"
           >
-            You've done the hard work. Your anti-vision and vision are defined.
-            Now move to the Daytime Interrupt Protocol.
+            Ты проделал тяжёлую работу. Анти-видение и видение определены. Переходи к Дневному Протоколу Прерываний.
           </motion.p>
           {morning.antiVisionSentence && (
             <motion.div
@@ -131,7 +130,7 @@ export default function Morning() {
               transition={{ delay: 0.5 }}
               className="w-full p-4 rounded-xl bg-accent-red/10 border border-accent-red/20 mb-3"
             >
-              <p className="text-xs text-accent-red font-medium mb-1">YOUR ANTI-VISION</p>
+              <p className="text-xs text-accent-red font-medium mb-1">ТВОЁ АНТИ-ВИДЕНИЕ</p>
               <p className="text-sm text-text-primary">{morning.antiVisionSentence}</p>
             </motion.div>
           )}
@@ -142,7 +141,7 @@ export default function Morning() {
               transition={{ delay: 0.6 }}
               className="w-full p-4 rounded-xl bg-accent-emerald/10 border border-accent-emerald/20 mb-6"
             >
-              <p className="text-xs text-accent-emerald font-medium mb-1">YOUR VISION</p>
+              <p className="text-xs text-accent-emerald font-medium mb-1">ТВОЁ ВИДЕНИЕ</p>
               <p className="text-sm text-text-primary">{morning.visionSentence}</p>
             </motion.div>
           )}
@@ -154,7 +153,7 @@ export default function Morning() {
             onClick={handleComplete}
             className="w-full py-3.5 rounded-xl font-semibold text-sm bg-accent-amber text-surface border-none cursor-pointer"
           >
-            Complete & Continue
+            Завершить и Продолжить
           </motion.button>
         </div>
       </Card>
@@ -163,11 +162,11 @@ export default function Morning() {
 
   // Section headers
   const getSectionHeader = (): string | null => {
-    if (currentStep === 0) return 'Part 1: Self-Reflection';
-    if (currentStep === morningQuestions.length) return 'Part 2: Anti-Vision';
-    if (currentStep === morningQuestions.length + antiVisionPrompts.length) return 'Part 3: Vision';
-    if (currentStep === morningQuestions.length + antiVisionPrompts.length + visionPrompts.length) return 'Part 4: Compression';
-    if (step.type === 'yearGoal') return 'Part 5: One-Year Lens';
+    if (currentStep === 0) return 'Часть 1: Саморефлексия';
+    if (currentStep === morningQuestions.length) return 'Часть 2: Анти-Видение';
+    if (currentStep === morningQuestions.length + antiVisionPrompts.length) return 'Часть 3: Видение';
+    if (currentStep === morningQuestions.length + antiVisionPrompts.length + visionPrompts.length) return 'Часть 4: Сжатие';
+    if (step.type === 'yearGoal') return 'Часть 5: Годовой Фокус';
     return null;
   };
 

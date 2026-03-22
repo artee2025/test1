@@ -45,17 +45,16 @@ export default function Evening() {
             >
               🎮
             </motion.div>
-            <h2 className="text-xl font-bold mb-3">Time to Define Your Game</h2>
+            <h2 className="text-xl font-bold mb-3">Пора Определить Твою Игру</h2>
             <p className="text-text-secondary text-sm leading-relaxed mb-6 max-w-xs">
-              Transform your insights into a structured system. Turn life into a game with
-              stakes, missions, quests, and rules.
+              Преврати свои инсайты в структурированную систему. Преврати жизнь в игру со ставками, миссиями, квестами и правилами.
             </p>
             <motion.button
               whileTap={{ scale: 0.97 }}
               onClick={() => setPhase('game-setup')}
               className="w-full py-3.5 rounded-xl bg-accent-purple text-white font-semibold text-sm border-none cursor-pointer"
             >
-              Define The Game
+              Определить Игру
             </motion.button>
           </div>
         </Card>
@@ -75,7 +74,7 @@ export default function Evening() {
           animate={{ opacity: 1 }}
           className="text-accent-purple text-xs font-bold tracking-wider uppercase mb-4"
         >
-          Evening Reflection
+          Вечерняя Рефлексия
         </motion.p>
         <TextareaPrompt
           prompt={prompt.prompt}
@@ -91,9 +90,9 @@ export default function Evening() {
     return (
       <div className="flex-1 px-4 pt-6 pb-24 overflow-y-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-          <h1 className="text-2xl font-bold mb-2">Define Your Game</h1>
+          <h1 className="text-2xl font-bold mb-2">Определи Свою Игру</h1>
           <p className="text-text-secondary text-sm mb-6">
-            These become your daily forcefield against distractions.
+            Они станут твоим ежедневным щитом от отвлечений.
           </p>
         </motion.div>
 
@@ -165,7 +164,7 @@ export default function Evening() {
             <textarea
               value={bossFight}
               onChange={e => setBossFight(e.target.value)}
-              placeholder="Your 1-month project..."
+              placeholder="Твой проект на месяц..."
               className="w-full bg-surface-card border border-accent-purple/20 rounded-xl px-4 py-3 text-text-primary text-sm resize-none focus:outline-none focus:border-accent-purple/50 min-h-[60px] placeholder:text-text-muted"
               rows={2}
             />
@@ -180,11 +179,11 @@ export default function Evening() {
             <label className="flex items-center gap-2 text-accent-blue text-xs font-bold tracking-wider uppercase mb-2">
               {gameLabels.quests.icon} {gameLabels.quests.title}
             </label>
-            <p className="text-text-muted text-xs mb-2">One per line. These are your daily levers.</p>
+            <p className="text-text-muted text-xs mb-2">По одному на строку. Это твои ежедневные рычаги.</p>
             <textarea
               value={questsText}
               onChange={e => setQuestsText(e.target.value)}
-              placeholder={"Read for 30 minutes\nExercise\nWork on the project for 2 hours\nMeditate"}
+              placeholder={"Читать 30 минут\nТренировка\nРабота над проектом 2 часа\nМедитация"}
               className="w-full bg-surface-card border border-accent-blue/20 rounded-xl px-4 py-3 text-text-primary text-sm resize-none focus:outline-none focus:border-accent-blue/50 min-h-[100px] placeholder:text-text-muted"
               rows={4}
             />
@@ -199,11 +198,11 @@ export default function Evening() {
             <label className="flex items-center gap-2 text-text-secondary text-xs font-bold tracking-wider uppercase mb-2">
               {gameLabels.rules.icon} {gameLabels.rules.title}
             </label>
-            <p className="text-text-muted text-xs mb-2">One per line. Constraints that breed creativity.</p>
+            <p className="text-text-muted text-xs mb-2">По одному на строку. Ограничения, рождающие креативность.</p>
             <textarea
               value={rulesText}
               onChange={e => setRulesText(e.target.value)}
-              placeholder={"No social media before noon\nNo alcohol on weekdays\nSleep by 11 PM"}
+              placeholder={"Никаких соцсетей до обеда\nБез алкоголя в будни\nСон до 23:00"}
               className="w-full bg-surface-card border border-white/5 rounded-xl px-4 py-3 text-text-primary text-sm resize-none focus:outline-none focus:border-white/10 min-h-[100px] placeholder:text-text-muted"
               rows={4}
             />
@@ -249,7 +248,7 @@ export default function Evening() {
                 : 'bg-surface-elevated text-text-muted cursor-not-allowed'
             }`}
           >
-            Launch The Game
+            Запустить Игру
           </motion.button>
         </div>
       </div>
@@ -274,7 +273,7 @@ export default function Evening() {
         transition={{ delay: 0.3 }}
         className="text-3xl font-bold mb-3 text-center"
       >
-        The Game Begins
+        Игра Начинается
       </motion.h1>
       <motion.p
         initial={{ opacity: 0 }}
@@ -282,8 +281,7 @@ export default function Evening() {
         transition={{ delay: 0.5 }}
         className="text-text-secondary text-sm text-center mb-8 max-w-xs leading-relaxed"
       >
-        Your identity shift is underway. Every day is a new level.
-        Complete your quests, respect the rules, defeat the boss.
+        Трансформация запущена. Каждый день — новый уровень. Выполняй квесты, соблюдай правила, победи босса.
       </motion.p>
       <motion.button
         initial={{ opacity: 0 }}
@@ -293,7 +291,7 @@ export default function Evening() {
         onClick={() => navigate('/')}
         className="w-full max-w-xs py-3.5 rounded-xl bg-accent-amber text-surface font-semibold text-sm border-none cursor-pointer"
       >
-        Enter The Game
+        Войти в Игру
       </motion.button>
     </div>
   );

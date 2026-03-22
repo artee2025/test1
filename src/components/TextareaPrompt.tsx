@@ -13,7 +13,7 @@ export default function TextareaPrompt({
   prompt,
   value,
   onChange,
-  placeholder = 'Write freely...',
+  placeholder = 'Пиши свободно...',
   minRows = 4,
 }: TextareaPromptProps) {
   const ref = useRef<HTMLTextAreaElement>(null);

@@ -38,30 +38,30 @@ export default function Settings() {
         animate={{ opacity: 1, y: 0 }}
         className="text-2xl font-bold mb-6"
       >
-        Settings
+        Настройки
       </motion.h1>
 
       {/* Notifications */}
-      <Section title="Notifications">
+      <Section title="Уведомления">
         <div className="flex items-center justify-between">
           <div>
-            <p className="text-text-primary text-sm">Interrupt Reminders</p>
+            <p className="text-text-primary text-sm">Напоминания о прерываниях</p>
             <p className="text-text-muted text-xs">
-              Status: {notifStatus === 'granted' ? 'Enabled' : notifStatus === 'denied' ? 'Blocked' : 'Not set'}
+              Status: {notifStatus === 'granted' ? 'Включено' : notifStatus === 'denied' ? 'Заблокировано' : 'Не задано'}
             </p>
           </div>
           <button
             onClick={handleNotifications}
             className="text-xs bg-surface-elevated text-text-primary px-3 py-2 rounded-lg border-none cursor-pointer"
           >
-            {notifStatus === 'granted' ? 'Enabled ✓' : 'Enable'}
+            {notifStatus === 'granted' ? 'Включено ✓' : 'Включить'}
           </button>
         </div>
       </Section>
 
       {/* Edit Quests */}
       {state.game.defined && (
-        <Section title="Edit Daily Quests">
+        <Section title="Редактировать Квесты">
           <div className="space-y-2 mb-3">
             {state.game.quests.map(q => (
               <div key={q.id} className="flex items-center justify-between p-2 rounded-lg bg-surface-card/50">
@@ -80,14 +80,14 @@ export default function Settings() {
               value={newQuest}
               onChange={e => setNewQuest(e.target.value)}
               onKeyDown={e => e.key === 'Enter' && handleAddQuest()}
-              placeholder="New quest..."
+              placeholder="Новый квест..."
               className="flex-1 bg-surface-card border border-white/5 rounded-lg px-3 py-2 text-text-primary text-sm focus:outline-none focus:border-accent-blue/50"
             />
             <button
               onClick={handleAddQuest}
               className="px-3 py-2 bg-accent-blue/20 text-accent-blue rounded-lg text-sm font-medium border-none cursor-pointer"
             >
-              Add
+              Добавить
             </button>
           </div>
         </Section>
@@ -95,7 +95,7 @@ export default function Settings() {
 
       {/* Edit Rules */}
       {state.game.defined && (
-        <Section title="Edit Rules">
+        <Section title="Редактировать Правила">
           <div className="space-y-2 mb-3">
             {state.game.rules.map((rule, i) => (
               <div key={i} className="flex items-center justify-between p-2 rounded-lg bg-surface-card/50">
@@ -114,38 +114,38 @@ export default function Settings() {
               value={newRule}
               onChange={e => setNewRule(e.target.value)}
               onKeyDown={e => e.key === 'Enter' && handleAddRule()}
-              placeholder="New rule..."
+              placeholder="Новое правило..."
               className="flex-1 bg-surface-card border border-white/5 rounded-lg px-3 py-2 text-text-primary text-sm focus:outline-none focus:border-white/10"
             />
             <button
               onClick={handleAddRule}
               className="px-3 py-2 bg-white/5 text-text-primary rounded-lg text-sm font-medium border-none cursor-pointer"
             >
-              Add
+              Добавить
             </button>
           </div>
         </Section>
       )}
 
       {/* Stats */}
-      <Section title="Stats">
+      <Section title="Статистика">
         <div className="grid grid-cols-2 gap-3">
-          <StatCard label="Total XP" value={String(state.xp.total)} />
-          <StatCard label="Level" value={String(state.xp.level)} />
-          <StatCard label="Current Streak" value={`${state.xp.currentStreak}d`} />
-          <StatCard label="Best Streak" value={`${state.xp.longestStreak}d`} />
-          <StatCard label="Journal Entries" value={String(state.journal.length)} />
-          <StatCard label="Days Tracked" value={String(state.xp.history.length)} />
+          <StatCard label="Всего XP" value={String(state.xp.total)} />
+          <StatCard label="Уровень" value={String(state.xp.level)} />
+          <StatCard label="Текущая серия" value={`${state.xp.currentStreak}d`} />
+          <StatCard label="Лучшая серия" value={`${state.xp.longestStreak}d`} />
+          <StatCard label="Записей в дневнике" value={String(state.journal.length)} />
+          <StatCard label="Дней отслежено" value={String(state.xp.history.length)} />
         </div>
       </Section>
 
       {/* Danger Zone */}
-      <Section title="Danger Zone">
+      <Section title="Опасная зона">
         <button
           onClick={() => setShowResetConfirm(true)}
           className="w-full py-3 rounded-xl bg-accent-red/10 text-accent-red font-medium text-sm border border-accent-red/20 cursor-pointer"
         >
-          Reset All Data
+          Сбросить все данные
         </button>
       </Section>
 
@@ -166,17 +166,16 @@ export default function Settings() {
               onClick={e => e.stopPropagation()}
               className="bg-surface-card rounded-2xl p-6 w-full max-w-sm border border-white/10"
             >
-              <h3 className="text-lg font-bold mb-2">Reset Everything?</h3>
+              <h3 className="text-lg font-bold mb-2">Сбросить всё?</h3>
               <p className="text-text-secondary text-sm mb-6">
-                This will permanently delete all your protocol answers, game data,
-                journal entries, and XP. This cannot be undone.
+                Все ответы протокола, данные игры, записи дневника и XP будут безвозвратно удалены. Это нельзя отменить.
               </p>
               <div className="flex gap-3">
                 <button
                   onClick={() => setShowResetConfirm(false)}
                   className="flex-1 py-3 rounded-xl bg-surface-elevated text-text-primary font-medium text-sm border-none cursor-pointer"
                 >
-                  Cancel
+                  Отмена
                 </button>
                 <button
                   onClick={() => {
@@ -185,7 +184,7 @@ export default function Settings() {
                   }}
                   className="flex-1 py-3 rounded-xl bg-accent-red text-white font-medium text-sm border-none cursor-pointer"
                 >
-                  Delete All
+                  Удалить всё
                 </button>
               </div>
             </motion.div>
@@ -195,10 +194,10 @@ export default function Settings() {
 
       <div className="text-center mt-8 mb-4">
         <p className="text-text-muted text-xs">
-          The Game — Life Reset Protocol
+          The Game — Протокол Перезагрузки Жизни
         </p>
         <p className="text-text-muted text-[10px] mt-1">
-          Based on Dan Koe's methodology
+          По методологии Дэна Коу
         </p>
       </div>
     </div>

@@ -14,12 +14,12 @@ export default function JournalEntry() {
       <div className="flex-1 flex items-center justify-center px-4 pb-24">
         <div className="text-center">
           <p className="text-4xl mb-3">🔍</p>
-          <p className="text-text-muted text-sm mb-4">Entry not found</p>
+          <p className="text-text-muted text-sm mb-4">Запись не найдена</p>
           <button
             onClick={() => navigate('/journal')}
             className="text-accent-amber text-sm bg-transparent border-none cursor-pointer"
           >
-            Back to Journal
+            Вернуться в Дневник
           </button>
         </div>
       </div>
@@ -33,12 +33,12 @@ export default function JournalEntry() {
           onClick={() => navigate('/journal')}
           className="text-text-secondary text-sm bg-transparent border-none cursor-pointer mb-4 flex items-center gap-1"
         >
-          ← Back
+          ← Назад
         </button>
 
         <h1 className="text-xl font-bold mb-1">{entry.title}</h1>
         <p className="text-text-muted text-xs mb-6">
-          {new Date(entry.date).toLocaleDateString('en-US', {
+          {new Date(entry.date).toLocaleDateString('ru-RU', {
             weekday: 'long',
             month: 'long',
             day: 'numeric',

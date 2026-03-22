@@ -2,10 +2,10 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const tabs = [
-  { path: '/', label: 'Game', icon: '⚔️' },
-  { path: '/protocol', label: 'Protocol', icon: '🧠' },
-  { path: '/journal', label: 'Journal', icon: '📖' },
-  { path: '/settings', label: 'Settings', icon: '⚙️' },
+  { path: '/', label: 'Игра', icon: '⚔️' },
+  { path: '/protocol', label: 'Протокол', icon: '🧠' },
+  { path: '/journal', label: 'Дневник', icon: '📖' },
+  { path: '/settings', label: 'Настройки', icon: '⚙️' },
 ];
 
 export default function BottomNav() {

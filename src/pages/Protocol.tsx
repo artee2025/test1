@@ -5,27 +5,27 @@ import { useGameState } from '../hooks/useGameState';
 const phases = [
   {
     id: 'morning',
-    title: 'Morning — Excavation',
-    subtitle: 'Deep self-reflection. Uncover your anti-vision and vision.',
-    duration: '30-60 min',
+    title: 'Утро — Раскопки',
+    subtitle: 'Глубокая саморефлексия. Раскрой своё анти-видение и видение.',
+    duration: '30-60 мин',
     icon: '🌅',
     color: 'border-accent-amber/30 bg-accent-amber/5',
     path: '/protocol/morning',
   },
   {
     id: 'daytime',
-    title: 'Daytime — Interrupts',
-    subtitle: 'Break autopilot with 6 scheduled awareness checkpoints.',
-    duration: 'Throughout the day',
+    title: 'День — Прерывания',
+    subtitle: 'Сломай автопилот с помощью 6 контрольных точек осознанности.',
+    duration: 'В течение дня',
     icon: '⚡',
     color: 'border-accent-blue/30 bg-accent-blue/5',
     path: '/protocol/daytime',
   },
   {
     id: 'evening',
-    title: 'Evening — Synthesis',
-    subtitle: 'Integrate insights. Define your Game.',
-    duration: '20-30 min',
+    title: 'Вечер — Синтез',
+    subtitle: 'Интегрируй инсайты. Определи свою Игру.',
+    duration: '20-30 мин',
     icon: '🌙',
     color: 'border-accent-purple/30 bg-accent-purple/5',
     path: '/protocol/evening',
@@ -58,10 +58,9 @@ export default function Protocol() {
         animate={{ opacity: 1, y: 0 }}
         className="mb-8"
       >
-        <h1 className="text-2xl font-bold mb-2">1-Day Reset Protocol</h1>
+        <h1 className="text-2xl font-bold mb-2">Протокол Перезагрузки</h1>
         <p className="text-text-secondary text-sm leading-relaxed">
-          A comprehensive protocol to excavate your identity, interrupt unconscious patterns,
-          and define the game you want to play.
+          Комплексный протокол для исследования идентичности, прерывания бессознательных паттернов и определения игры, в которую ты хочешь играть.
         </p>
       </motion.div>
 
@@ -106,7 +105,7 @@ export default function Protocol() {
                     {phase.subtitle}
                   </p>
                   <span className="text-text-muted text-xs">
-                    {isLocked ? '🔒 Complete morning first' : phase.duration}
+                    {isLocked ? '🔒 Сначала пройди утро' : phase.duration}
                   </span>
                 </div>
               </div>
@@ -122,7 +121,7 @@ export default function Protocol() {
           className="mt-8 p-4 rounded-xl bg-accent-emerald/10 border border-accent-emerald/20 text-center"
         >
           <p className="text-accent-emerald text-sm font-medium">
-            Protocol complete! Your Game is defined.
+            Протокол завершён! Твоя Игра определена.
           </p>
         </motion.div>
       )}

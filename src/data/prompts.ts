@@ -1,145 +1,145 @@
 export const morningQuestions = [
   {
     id: 'q1',
-    prompt: 'What would you do with your life if money, status, and others\' opinions were completely irrelevant?',
+    prompt: 'Чем бы ты занимался, если бы деньги, статус и чужое мнение были абсолютно неважны?',
   },
   {
     id: 'q2',
-    prompt: 'What have you been avoiding that you know, deep down, you need to face?',
+    prompt: 'Чего ты избегаешь, хотя в глубине души знаешь, что нужно с этим разобраться?',
   },
   {
     id: 'q3',
-    prompt: 'What are you doing daily that you know is pulling you further from the life you want?',
+    prompt: 'Что ты делаешь каждый день, зная, что это отдаляет тебя от жизни, которую ты хочешь?',
   },
   {
     id: 'q4',
-    prompt: 'When was the last time you felt truly alive? What were you doing?',
+    prompt: 'Когда ты в последний раз чувствовал себя по-настоящему живым? Что ты тогда делал?',
   },
   {
     id: 'q5',
-    prompt: 'What beliefs about yourself are you defending that may not even be true?',
+    prompt: 'Какие убеждения о себе ты защищаешь, хотя они могут быть неправдой?',
   },
   {
     id: 'q6',
-    prompt: 'What would the person you want to become do today — right now?',
+    prompt: 'Что бы сделал тот человек, которым ты хочешь стать, прямо сейчас?',
   },
   {
     id: 'q7',
-    prompt: 'What goals are you pursuing because someone else decided they were important?',
+    prompt: 'Какие цели ты преследуешь, потому что кто-то другой решил, что они важны?',
   },
   {
     id: 'q8',
-    prompt: 'If you stripped away every role you play — employee, partner, child — who is left?',
+    prompt: 'Если убрать все роли — работника, партнёра, ребёнка — кто останется?',
   },
   {
     id: 'q9',
-    prompt: 'What is the one thing you\'re most afraid of others finding out about you?',
+    prompt: 'Чего ты больше всего боишься, что другие о тебе узнают?',
   },
   {
     id: 'q10',
-    prompt: 'Where in your life are you choosing comfort over growth?',
+    prompt: 'Где в своей жизни ты выбираешь комфорт вместо роста?',
   },
   {
     id: 'q11',
-    prompt: 'What would you attempt if you knew the process itself would be enjoyable, regardless of outcome?',
+    prompt: 'За что бы ты взялся, зная, что сам процесс будет приносить удовольствие, независимо от результата?',
   },
 ];
 
 export const antiVisionPrompts = [
   {
     id: 'av-5yr',
-    prompt: 'Imagine it\'s 5 years from now and absolutely nothing has changed. Describe an average Tuesday.\n\nWhere do you wake up? What does your body feel like? What\'s the first thing you think about? Who\'s around you? What do you do between 9 AM and 6 PM? How do you feel at 10 PM?',
+    prompt: 'Представь, что прошло 5 лет, и абсолютно ничего не изменилось. Опиши обычный вторник.\n\nГде ты просыпаешься? Как себя чувствует тело? О чём первая мысль? Кто рядом? Чем ты занимаешься с 9 до 18? Что ты чувствуешь в 10 вечера?',
   },
   {
     id: 'av-10yr',
-    prompt: 'Now stretch it to 10 years of the same pattern.\n\nWhat have you missed? What opportunities closed? Who gave up on you? What do people say about you when you\'re not in the room?',
+    prompt: 'Теперь представь 10 лет той же колеи.\n\nЧто ты упустил? Какие возможности закрылись? Кто от тебя отвернулся? Что о тебе говорят за спиной?',
   },
   {
     id: 'av-end',
-    prompt: 'You\'re at the end of your life. You lived the safe version. You never broke the pattern.\n\nWhat was the cost? What words would you use to describe that life?',
+    prompt: 'Ты в конце жизни. Ты прожил безопасную версию. Ты так и не сломал шаблон.\n\nЧего это стоило? Какими словами ты опишешь эту жизнь?',
   },
 ];
 
 export const visionPrompts = [
   {
     id: 'v-5yr',
-    prompt: 'Now imagine the opposite. 5 years from now, you\'ve made the shift.\n\nDescribe that same Tuesday. Where do you wake up? What does your morning look like? What work are you doing? How does your body feel? Who are you surrounded by?',
+    prompt: 'Теперь представь противоположное. 5 лет спустя, ты совершил перелом.\n\nОпиши тот же вторник. Где ты просыпаешься? Как выглядит твоё утро? Какой работой ты занимаешься? Как себя чувствует тело? Кто тебя окружает?',
   },
   {
     id: 'v-10yr',
-    prompt: '10 years of building on that momentum.\n\nWhat have you created? What do people come to you for? What problems have you solved? What does freedom feel like?',
+    prompt: '10 лет наращивания импульса.\n\nЧто ты создал? За чем к тебе обращаются люди? Какие проблемы ты решил? Каково ощущение свободы?',
   },
   {
     id: 'v-end',
-    prompt: 'End of your life — but this time you went all in.\n\nWhat are you most proud of? What would you tell your younger self? What legacy did you leave?',
+    prompt: 'Конец жизни — но на этот раз ты пошёл ва-банк.\n\nЧем ты больше всего гордишься? Что бы ты сказал себе молодому? Какое наследие ты оставил?',
   },
 ];
 
 export const compressionPrompts = {
-  antiVision: 'Write a single sentence that captures the life you refuse to let happen. It should make you feel something when you read it.',
-  vision: 'Write a single sentence that captures what you\'re building toward. This is your north star — it will evolve as you do.',
-  yearGoal: 'What would have to be true in one year for you to know you\'ve broken the old pattern? Be specific.',
+  antiVision: 'Напиши одно предложение, которое передаёт жизнь, которую ты отказываешься допустить. Оно должно вызывать эмоции при прочтении.',
+  vision: 'Напиши одно предложение, которое передаёт то, к чему ты стремишься. Это твоя путеводная звезда — она будет меняться вместе с тобой.',
+  yearGoal: 'Что должно стать правдой через год, чтобы ты знал, что сломал старый шаблон? Будь конкретен.',
 };
 
 export const interruptCheckpoints = [
   {
     id: 'c1',
     time: '11:00',
-    label: '11:00 AM',
+    label: '11:00',
     questions: [
-      'What am I avoiding right now?',
-      'Is this action moving me toward my vision or my anti-vision?',
-      'What would the person I\'m becoming do right now?',
+      'Чего я сейчас избегаю?',
+      'Это действие приближает меня к моему видению или анти-видению?',
+      'Что бы сделал тот, кем я становлюсь, прямо сейчас?',
     ],
   },
   {
     id: 'c2',
     time: '13:30',
-    label: '1:30 PM',
+    label: '13:30',
     questions: [
-      'Am I on autopilot or am I conscious?',
-      'What unconscious goal am I pursuing right now?',
-      'What story am I telling myself about why I can\'t change?',
+      'Я на автопилоте или осознанно действую?',
+      'Какую бессознательную цель я сейчас преследую?',
+      'Какую историю я себе рассказываю о том, почему не могу измениться?',
     ],
   },
   {
     id: 'c3',
     time: '15:15',
-    label: '3:15 PM',
+    label: '15:15',
     questions: [
-      'Where am I choosing comfort over growth right now?',
-      'What would make this hour count?',
-      'Am I defending an identity that no longer serves me?',
+      'Где я прямо сейчас выбираю комфорт вместо роста?',
+      'Что сделало бы этот час значимым?',
+      'Я защищаю идентичность, которая мне больше не служит?',
     ],
   },
   {
     id: 'c4',
     time: '17:00',
-    label: '5:00 PM',
+    label: '17:00',
     questions: [
-      'Did I move the needle today, or just stay busy?',
-      'What pattern did I repeat today that I promised I\'d break?',
-      'What is one thing I can still do before tonight that matters?',
+      'Я сдвинул дело с мёртвой точки или просто был занят?',
+      'Какой шаблон я повторил сегодня, хотя обещал его сломать?',
+      'Что я ещё могу сделать до вечера, что реально важно?',
     ],
   },
   {
     id: 'c5',
     time: '19:30',
-    label: '7:30 PM',
+    label: '19:30',
     questions: [
-      'What did I learn about myself today?',
-      'Where did I feel resistance — and what was behind it?',
-      'Am I proud of how I spent this day?',
+      'Что я узнал о себе сегодня?',
+      'Где я чувствовал сопротивление — и что за ним стояло?',
+      'Горжусь ли я тем, как провёл этот день?',
     ],
   },
   {
     id: 'c6',
     time: '21:00',
-    label: '9:00 PM',
+    label: '21:00',
     questions: [
-      'What feels most true right now?',
-      'What do I need to let go of to move forward?',
-      'What will I do differently tomorrow?',
+      'Что ощущается наиболее правдивым прямо сейчас?',
+      'Что мне нужно отпустить, чтобы двигаться дальше?',
+      'Что я сделаю по-другому завтра?',
     ],
   },
 ];
@@ -147,27 +147,27 @@ export const interruptCheckpoints = [
 export const eveningPrompts = [
   {
     id: 'e1',
-    prompt: 'What feels most true about why you\'ve been stuck? Don\'t censor yourself — write the raw, uncomfortable answer.',
+    prompt: 'Что ощущается наиболее правдивым в том, почему ты застрял? Не цензурируй — напиши сырой, неудобный ответ.',
   },
   {
     id: 'e2',
-    prompt: 'What is the actual enemy? Not circumstances, not other people — what inside you keeps the pattern alive?',
+    prompt: 'Кто настоящий враг? Не обстоятельства, не другие люди — что внутри тебя поддерживает этот шаблон?',
   },
   {
     id: 'e3',
-    prompt: 'What one thing, if you committed to it fully and eliminated all distractions, would change everything?',
+    prompt: 'Одна вещь, если ты полностью ей отдашься и устранишь все отвлечения, которая изменит всё?',
   },
   {
     id: 'e4',
-    prompt: 'Looking at today\'s excavation and interruptions — what is the single most important insight you uncovered?',
+    prompt: 'Глядя на сегодняшнюю работу и прерывания — какой самый важный инсайт ты обнаружил?',
   },
 ];
 
 export const gameLabels = {
-  stakes: { title: 'STAKES', subtitle: 'What\'s at stake if you lose', icon: '💀' },
-  endgame: { title: 'ENDGAME', subtitle: 'How you win', icon: '🏆' },
-  mission: { title: 'THE MISSION', subtitle: 'Your 1-year sole priority', icon: '🎯' },
-  bossFight: { title: 'BOSS FIGHT', subtitle: '1-month project — gain XP & level up', icon: '⚔️' },
-  quests: { title: 'DAILY QUESTS', subtitle: 'The actions that compound', icon: '📋' },
-  rules: { title: 'THE RULES', subtitle: 'Constraints that breed creativity', icon: '🛡️' },
+  stakes: { title: 'СТАВКИ', subtitle: 'Что на кону, если проиграешь', icon: '💀' },
+  endgame: { title: 'ФИНАЛ', subtitle: 'Как ты побеждаешь', icon: '🏆' },
+  mission: { title: 'МИССИЯ', subtitle: 'Твой единственный приоритет на год', icon: '🎯' },
+  bossFight: { title: 'БОСС-ФАЙТ', subtitle: 'Проект на месяц — получи XP и прокачайся', icon: '⚔️' },
+  quests: { title: 'ЕЖЕДНЕВНЫЕ КВЕСТЫ', subtitle: 'Действия, которые накапливаются', icon: '📋' },
+  rules: { title: 'ПРАВИЛА', subtitle: 'Ограничения, рождающие креативность', icon: '🛡️' },
 };

@@ -36,7 +36,7 @@ export default function Dashboard() {
           transition={{ delay: 0.2 }}
           className="text-2xl font-bold mb-3 text-center"
         >
-          Your Game Awaits
+          Твоя Игра Ждёт
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
@@ -44,8 +44,7 @@ export default function Dashboard() {
           transition={{ delay: 0.4 }}
           className="text-text-secondary text-sm text-center mb-6 max-w-xs leading-relaxed"
         >
-          Complete the 1-Day Reset Protocol to define your anti-vision, vision,
-          mission, and daily quests. Then this becomes your command center.
+          Пройди Протокол Перезагрузки, чтобы определить анти-видение, видение, миссию и ежедневные квесты. После этого здесь будет твой командный центр.
         </motion.p>
         <motion.button
           initial={{ opacity: 0 }}
@@ -55,7 +54,7 @@ export default function Dashboard() {
           onClick={() => navigate('/protocol')}
           className="py-3.5 px-8 rounded-xl bg-accent-amber text-surface font-semibold text-sm border-none cursor-pointer"
         >
-          Begin Protocol
+          Начать Протокол
         </motion.button>
       </div>
     );
@@ -91,7 +90,7 @@ export default function Dashboard() {
                 {xp.total} XP
               </span>
               <span className="text-xs text-text-muted">
-                {xpForNext - xpIntoLevel} to next
+                {xpForNext - xpIntoLevel} до след.
               </span>
             </div>
             <ProgressBar percent={(xpIntoLevel / xpForNext) * 100} color="bg-accent-amber" />
@@ -173,7 +172,7 @@ export default function Dashboard() {
                   }}
                   className="text-xs bg-accent-purple/20 text-accent-purple px-3 py-1.5 rounded-lg border-none cursor-pointer font-medium"
                 >
-                  Save
+                  Сохранить
                 </button>
               </div>
             </motion.div>
@@ -186,7 +185,7 @@ export default function Dashboard() {
         index={4}
         label={{
           ...gameLabels.quests,
-          subtitle: `${completedQuests}/${game.quests.length} completed`,
+          subtitle: `${completedQuests}/${game.quests.length} выполнено`,
         }}
         bgClass="bg-accent-blue/5 border-accent-blue/15"
         labelColor="text-accent-blue"
@@ -203,7 +202,7 @@ export default function Dashboard() {
             ))}
           </div>
         ) : (
-          <p className="text-text-muted text-sm">No quests defined yet.</p>
+          <p className="text-text-muted text-sm">Квесты ещё не заданы.</p>
         )}
       </GameCard>
 

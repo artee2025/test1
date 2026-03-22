@@ -34,7 +34,7 @@ export default function Card({
   onNext,
   onBack,
   canAdvance = true,
-  nextLabel = 'Continue',
+  nextLabel = 'Далее',
 }: CardProps) {
   const [direction, setDirection] = useState(1);
 
@@ -76,7 +76,7 @@ export default function Card({
               onClick={handleBack}
               className="text-xs text-text-secondary bg-transparent border-none cursor-pointer px-2 py-1"
             >
-              Back
+              Назад
             </button>
           )}
         </div>

@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { GameProvider } from './hooks/useGameState';
 import BottomNav from './components/BottomNav';
+import Onboarding, { isOnboardingDone } from './components/Onboarding';
 import Dashboard from './pages/Dashboard';
 import Protocol from './pages/Protocol';
 import Morning from './pages/Morning';
@@ -47,10 +49,16 @@ function AnimatedRoutes() {
 }
 
 export default function App() {
+  const [showOnboarding, setShowOnboarding] = useState(!isOnboardingDone());
+
   return (
     <HashRouter>
       <GameProvider>
-        <AnimatedRoutes />
+        {showOnboarding ? (
+          <Onboarding onComplete={() => setShowOnboarding(false)} />
+        ) : (
+          <AnimatedRoutes />
+        )}
       </GameProvider>
     </HashRouter>
   );

@@ -129,7 +129,7 @@ export function GameProvider({ children }: { children: ReactNode }) {
         id: `morning-${Date.now()}`,
         date: new Date().toISOString(),
         type: 'morning' as const,
-        title: 'Morning Excavation',
+        title: 'Утренние Раскопки',
         content: {
           ...morning.answers,
           antiVisionSentence: morning.antiVisionSentence,
@@ -218,7 +218,7 @@ export function GameProvider({ children }: { children: ReactNode }) {
         id: `evening-${Date.now()}`,
         date: new Date().toISOString(),
         type: 'evening' as const,
-        title: 'Evening Synthesis',
+        title: 'Вечерний Синтез',
         content: s.protocol.evening.reflections,
       };
       return {

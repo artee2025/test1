@@ -14,7 +14,7 @@ export default function StreakFire({ streak }: StreakFireProps) {
       className="flex items-center gap-1.5 text-accent-amber"
     >
       <span className="text-lg">🔥</span>
-      <span className="text-sm font-bold">{streak}d</span>
+      <span className="text-sm font-bold">{streak}д</span>
     </motion.div>
   );
 }

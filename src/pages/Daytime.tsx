@@ -40,9 +40,9 @@ export default function Daytime() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <h1 className="text-2xl font-bold mb-2">Interrupt Protocol</h1>
+        <h1 className="text-2xl font-bold mb-2">Протокол Прерываний</h1>
         <p className="text-text-secondary text-sm leading-relaxed mb-6">
-          Break autopilot. At each checkpoint, pause and answer honestly.
+          Сломай автопилот. На каждой контрольной точке остановись и ответь честно.
         </p>
       </motion.div>
 
@@ -88,12 +88,12 @@ export default function Daytime() {
                     <p className="text-text-primary font-medium text-sm">{cp.label}</p>
                     <p className="text-text-muted text-xs mt-0.5">
                       {isCompleted
-                        ? 'Completed'
+                        ? 'Пройдено'
                         : status === 'current'
-                        ? 'Active now'
+                        ? 'Активно'
                         : status === 'past'
-                        ? 'Missed'
-                        : 'Upcoming'}
+                        ? 'Пропущено'
+                        : 'Впереди'}
                     </p>
                   </div>
 
@@ -132,7 +132,7 @@ export default function Daytime() {
                             onClick={() => handleSave(cp.id)}
                             className="w-full py-3 rounded-xl bg-accent-blue text-white font-semibold text-sm border-none cursor-pointer"
                           >
-                            Save Checkpoint
+                            Сохранить точку
                           </motion.button>
                         )}
                       </div>
@@ -153,7 +153,7 @@ export default function Daytime() {
           onClick={completeDaytime}
           className="w-full mt-6 py-3.5 rounded-xl bg-accent-amber text-surface font-semibold text-sm border-none cursor-pointer"
         >
-          Complete Daytime Phase
+          Завершить Дневную Фазу
         </motion.button>
       )}
     </div>

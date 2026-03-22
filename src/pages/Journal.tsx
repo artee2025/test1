@@ -11,10 +11,10 @@ const typeColors: Record<string, string> = {
 };
 
 const typeLabels: Record<string, string> = {
-  morning: 'Morning',
-  daytime: 'Daytime',
-  evening: 'Evening',
-  daily: 'Daily',
+  morning: 'Утро',
+  daytime: 'День',
+  evening: 'Вечер',
+  daily: 'Ежедневно',
 };
 
 export default function Journal() {
@@ -35,7 +35,7 @@ export default function Journal() {
         animate={{ opacity: 1, y: 0 }}
         className="text-2xl font-bold mb-4"
       >
-        Journal
+        Дневник
       </motion.h1>
 
       {/* Filter tabs */}
@@ -50,7 +50,7 @@ export default function Journal() {
                 : 'bg-surface-card text-text-muted'
             }`}
           >
-            {f === 'all' ? 'All' : typeLabels[f]}
+            {f === 'all' ? 'Все' : typeLabels[f]}
           </button>
         ))}
       </div>
@@ -64,8 +64,8 @@ export default function Journal() {
           <p className="text-4xl mb-3">📖</p>
           <p className="text-text-muted text-sm">
             {filter === 'all'
-              ? 'No journal entries yet. Complete the protocol to start.'
-              : `No ${typeLabels[filter]} entries yet.`}
+              ? 'Записей пока нет. Пройди протокол, чтобы начать.'
+              : `Записей типа ${typeLabels[filter]} пока нет.`}
           </p>
         </motion.div>
       ) : (
@@ -89,7 +89,7 @@ export default function Journal() {
                     {typeLabels[entry.type]}
                   </span>
                   <span className="text-text-muted text-xs">
-                    {new Date(entry.date).toLocaleDateString('en-US', {
+                    {new Date(entry.date).toLocaleDateString('ru-RU', {
                       month: 'short',
                       day: 'numeric',
                       year: 'numeric',
