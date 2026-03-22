@@ -1,0 +1,22 @@
+{
+  "name": "The Game — Life Reset",
+  "short_name": "The Game",
+  "description": "Transform your life in 1 day with Dan Koe's protocol",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f0f13",
+  "theme_color": "#0f0f13",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
